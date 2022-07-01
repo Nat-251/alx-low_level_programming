@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /**
- *main - Task 1 print the last digit of the number stored in the variable n
- *
+ *main - The lst digit
  *Return: 0
  **/
 
@@ -15,7 +14,6 @@ int main(void)
 
         srand(time(0));
         n = rand() - RAND_MAX / 2;
-        /* your code goes there */
         printf("%s %d is %d and is ", last, n, n % 10);
         if (n % 10 > 5)
         {
