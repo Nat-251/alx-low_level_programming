@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* main - This is just a main function
+ * main - This is just a main function
  * Return: Nothing is returned
  */
 
