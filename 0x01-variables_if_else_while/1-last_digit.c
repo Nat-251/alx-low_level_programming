@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - The lst digit
+ * main - The last digit
  * Return: 0
 */
 
@@ -29,4 +29,3 @@ int main(void)
         }
         return (0);
 }
-
