@@ -4,32 +4,33 @@
 
 /**
  *main -> print all possible different combinations of two digits
- *Return : Always 0  
-*/
+ *Return : always 0
+ */
 
 int main(void)
 {
-	int ch;
-	int n;
-
-	for (ch = 48; ch<= 57; ch++)
-	{
-		for (n = 49; n <= 57; n++)
-		{
+        int ch;
+        int n;
+        int m;
+        for (ch = 48; ch<= 57; ch++)
+        {
+                for (n = 49; n <= 57; n++)
+                {
 			if (n > ch)
-			{
+                        {
 				putchar(ch);
-				putchar(n);
-				if (ch != 56 || n! = 57)
-				{
+                                putchar(n);
+                                putchar(m);
+                                if (ch != 55  n != 56)
+                                {
 					putchar(44);
-					putchar(32);
-				}
-			}
-		}
-	}
+                                        putchar(32);
+                                }
+                        }
+                }
+        }
 
-	putchar(10);
+        putchar(10);
 
-	return (0);
+        return (0);
 }
