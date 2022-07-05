@@ -7,6 +7,7 @@
  * Return: On success 0
 */
 int main(void)
+int _ptchar(char c)
 {
 	{
 		_putchar("_");
