@@ -4,13 +4,14 @@
 
 /**
  *main -> print all possible different combinations of two digits
- *Return : 0 always 
- */
+ *Return : Always 0  
+*/
 
 int main(void)
 {
 	int ch;
 	int n;
+
 	for (ch = 48; ch<= 57; ch++)
 	{
 		for (n = 49; n <= 57; n++)
