@@ -4,7 +4,7 @@
 
 /**
  *main -> print all possible different combinations of two digits
- *Return : always 0
+ *Return: 0 if success 
  */
 
 int main(void)
