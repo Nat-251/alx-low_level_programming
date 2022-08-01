@@ -1,18 +1,13 @@
-#include "main.h"
-#include <stdlib.h>
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
 
-/**
- * malloc_checked - Allocates memory using malloc.
- * @b: The number of bytes to be allocated.
- *
- * Return: A pointer to the allocated memory.
+/*
+ * File: 0-object_like_macro.h
+ * Auth: Brennan D Baraban
+ * Desc: Header file that defines a macro named
+ *       SIZE as an abbreviation for the token 1024.
  */
-void *malloc_checked(unsigned int b)
-{
-	void *mem = malloc(b);
 
-	if (mem == NULL)
-		exit(98);
+#define SIZE 1024
 
-	return (mem);
-}
+#endif
