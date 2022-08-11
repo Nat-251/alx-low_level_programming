@@ -6,7 +6,7 @@
  * @h: The list_t list.
  *
  * Return: The number of nodes in h.
- *
+ * alx 
  */
 
 size_t print_list(const list_t *h)
