@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * _strspn - Gets the length of a prefix substring.
@@ -6,8 +6,9 @@
  * @accept: The prefix to be measured.
  *
  * Return: The number of bytes in s which
- *         consist only of bytes from accept.
+ * consist only of bytes from accept.
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
@@ -26,6 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 			else if (accept[index + 1] == '\0')
 				return (bytes);
 		}
+
 		s++;
 	}
 

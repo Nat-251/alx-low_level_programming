@@ -1,40 +1,28 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _atoi - Convert a string to an integer.
- * @s: The pointer to convert
+ * _atoi - convert a string to an integer.
+ * @s: the string to be comverted.
  *
- * Return: A integer
+ *Return: The integer value of the comverted string.
  */
+
 int _atoi(char *s)
 {
-	int c = 0;
-	unsigned int ni = 0;
-	int min = 1;
-	int isi = 0;
+	int sign = 1;
+	unsigned int num = 0;
 
-	while (s[c])
-	{
-		if (s[c] == 45)
-		{
-			min *= -1;
-		}
+	do {
 
-		while (s[c] >= 48 && s[c] <= 57)
-		{
-			isi = 1;
-			ni = (ni * 10) + (s[c] - '0');
-			c++;
-		}
+		if (*s == '-')
+			sign *= -1;
 
-		if (isi == 1)
-		{
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+
+		else if (num > 0)
 			break;
-		}
+	} while (*s++);
 
-		c++;
-	}
-
-	ni *= min;
-	return (ni);
+	return (num * sign);
 }

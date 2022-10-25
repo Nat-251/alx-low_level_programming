@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * rot13 - Encodes a string using rot13.
@@ -40,7 +40,7 @@ char *rot13(char *str)
 		}
 
 		indx1++;
-	}
 
+	}
 	return (str);
 }

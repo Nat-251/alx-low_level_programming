@@ -1,1 +1,1 @@
-This readme file is for the project 0x03 C-Debugging
+**I am learning on how to debug code**

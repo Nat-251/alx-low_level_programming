@@ -1,18 +1,22 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * puts2 - Prints one char out of two of a string.
- * @str: The string containing characters.
+ * puts2 - prints xters of a string
+ * @str: the used string reference
+ * Return: 0
  */
+
 void puts2(char *str)
 {
-	int index = 0, len = 0;
+	int i = 0;
 
-	while (str[index++])
-		len++;
-
-	for (index = 0; index < len; index += 2)
-		_putchar(str[index]);
-
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+		i++;
+	}
 	_putchar('\n');
 }

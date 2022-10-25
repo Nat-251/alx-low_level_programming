@@ -3,15 +3,15 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - check the code for ALX School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int s;
+    int s;
 
-	s = 98 + SIZE;
-	printf("%d\n", s);
-	return (0);
+    s = 98 + SIZE;
+    printf("%d\n", s);
+    return (0);
 }

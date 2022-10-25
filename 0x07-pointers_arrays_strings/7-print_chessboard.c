@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_chessboard - Prints a chessboard.
@@ -12,8 +11,8 @@ void print_chessboard(char (*a)[8])
 	for (indx1 = 0; a[indx1][7]; indx1++)
 	{
 		for (indx2 = 0; indx2 < 8; indx2++)
-			putchar (a[indx1][indx2]);
+			_putchar(a[indx1][indx2]);
 
-		putchar ('\n');
+		_putchar('\n');
 	}
 }

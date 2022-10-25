@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * string_toupper - Changes all lowercase letters
@@ -21,3 +21,4 @@ char *string_toupper(char *str)
 
 	return (str);
 }
+

@@ -1,11 +1,16 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-  * _isupper -> this is a function to check upper case alphas
-  * @c: an integer paramer
-  * Return: something but success
-  */
+ * _isupper - checks is a character is uppercase
+ * @c: carrier integer variable
+ * Return: 1 if true, 0 if false
+ */
+
 int _isupper(int c)
 {
-		return (c >= 'A' && c <= 'Z');
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	return (0);
 }
