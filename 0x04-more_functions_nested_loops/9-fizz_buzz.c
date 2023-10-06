@@ -1,40 +1,37 @@
 #include <stdio.h>
 
 /**
- * main - Fizz Buzz code
+ * main - Entry point
  *
- * Return: void
+ * Return: Always 0
  */
-
 int main(void)
 {
-	int i = 1;
+	int i;
 
+	i = 1;
 	while (i <= 100)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (((i % 3) == 0) && ((i % 5) == 0))
 		{
 			printf("FizzBuzz");
 		}
-		else if (i % 3 == 0)
+		else if ((i % 3) == 0)
 		{
 			printf("Fizz");
 		}
-		else if (i % 5 == 0)
+		else if ((i % 5) == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%i", i);
+			printf("%d", i);
 		}
 		if (i != 100)
-		{
 			putchar(' ');
-		}
-
 		i++;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }

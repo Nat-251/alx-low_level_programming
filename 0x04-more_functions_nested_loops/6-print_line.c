@@ -1,20 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_line - prints a line
- * @n: variable
- *
- * Return: 0
+ * print_line - function that draws a straight
+ * line in the terminal.
+ * @n: length of line
  */
 
 void print_line(int n)
 {
-	int a = 0;
+	int i;
 
-	while (a < n && n > 0)
+	i = 0;
+	if (n > 0)
 	{
-		_putchar('_');
-		a++;
+		while (i < n)
+		{
+			_putchar('_');
+			i++;
+		}
 	}
 	_putchar('\n');
 }
